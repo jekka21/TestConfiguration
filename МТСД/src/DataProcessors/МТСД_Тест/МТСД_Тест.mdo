@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b64d309c-347b-40e8-9a15-f9dbe7daa1dc">
+  <producedTypes>
+    <objectType typeId="dc504fca-ed33-4b9f-abfa-d713daf2ff95" valueTypeId="3d1cf0d5-0b71-4e38-b983-964ec0fe175b"/>
+    <managerType typeId="551516a0-1b49-4253-a684-1858a369a351" valueTypeId="2e66a7d2-ccd0-4e4a-97a9-f081c739114f"/>
+  </producedTypes>
+  <name>МТСД_Тест</name>
+  <synonym>
+    <key>ru</key>
+    <value>МТСД тест</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.МТСД_Тест.Form.Форма</defaultForm>
+  <forms uuid="9c845df0-4c75-4435-88ab-6e20bb10e56c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e2c29d75-8438-48c8-852a-f421bd2a2a4e">
+    <name>СканированиеШтрихкодов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сканирование штрихкодов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8e84e933-b820-469e-8872-b2aa097867f7">
+    <name>ФотоВидео</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фото видео</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c4d1e6ca-b531-46f9-b27c-d17b31ea213b">
+    <name>ЗапускПриложенияМобильногоУстройства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запуск приложения мобильного устройства</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

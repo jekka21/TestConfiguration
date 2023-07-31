@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scc:StandaloneContent xmlns:scc="http://g5.1c.ru/v8/dt/scc">
+  <usedItem metadata="CommonModule.МТСД_ОбменДаннымиВызовСервера"/>
+  <usedItem metadata="Subsystem.МТСД_Тест"/>
+  <usedItem metadata="Document.WA_ЧекЛист"/>
+  <usedItem metadata="CommonModule.МТСД_ОбменДаннымиКлиент"/>
+  <usedItem metadata="CommonModule.МТСД_ОбменДаннымиВызовАвтономногоСервера"/>
+  <usedItem metadata="CommonModule.МТСД_БСП_ОбщегоНазначения"/>
+  <usedItem metadata="CommonModule.МТСД_ФотоВидеоКлиент"/>
+  <usedItem metadata="Subsystem.МТСД"/>
+  <usedItem metadata="Role.МТСД_ПолныеПрава"/>
+  <usedItem metadata="CommonModule.МТСД_ОбменДаннымиСервер"/>
+  <usedItem metadata="CommonModule.МТСД_СканерШтрихкодовКлиент"/>
+  <usedItem metadata="Enum.WA_СтатусыЧекЛистов"/>
+  <usedItem metadata="ExchangePlan.МТСД"/>
+  <usedItem metadata="DataProcessor.МТСД_Тест"/>
+  <usedItem metadata="ChartOfCharacteristicTypes.WA_ПунктыЧекЛиста"/>
+  <usedItem metadata="Catalog.МТСД_ХранимыеФайлы"/>
+  <usedItem metadata="InformationRegister.МТСД_ДанныеОбъектов"/>
+  <unusedItem metadata="Catalog.МТСД_ХранимыеФайлы.Form.ФормаЭлемента"/>
+  <unusedItem metadata="Document.WA_ЧекЛист.Attribute.ШаблонЧекЛиста"/>
+  <unusedItem metadata="Document.WA_ЧекЛист.Attribute.ИдентификаторСтрокиОбъектаПроверки"/>
+  <unusedItem metadata="Document.WA_ЧекЛист.Attribute.ОбъектПроверки"/>
+  <unusedItem metadata="ChartOfCharacteristicTypes.WA_ПунктыЧекЛиста.Attribute.АлгоритмФормированияВопроса"/>
+  <unusedItem metadata="Document.WA_ЧекЛист.Attribute.ЗначениеСтрокиОбъектаПроверки"/>
+  <unusedItem metadata="ChartOfCharacteristicTypes.WA_ПунктыЧекЛиста.Attribute.ШаблонЧекЛиста"/>
+  <unusedItem metadata="Document.WA_ЧекЛист.TabularSection.Файлы"/>
+  <unusedItem metadata="ChartOfCharacteristicTypes.WA_ПунктыЧекЛиста.Attribute.РеквизитДопУпорядочивания"/>
+  <unusedItem metadata="Document.WA_ЧекЛист.Attribute.АлгоритмОбработкиПройденногоЧекЛистаВыполнен"/>
+  <priorityItem metadata="Document.WA_ЧекЛист" priority="LocalServer"/>
+  <priorityItem metadata="CommonModule.МТСД_ОбменДаннымиВызовАвтономногоСервера" priority="LocalServer"/>
+  <priorityItem metadata="ExchangePlan.МТСД" priority="LocalServer"/>
+  <priorityItem metadata="ChartOfCharacteristicTypes.WA_ПунктыЧекЛиста" priority="LocalServer"/>
+  <dataExchangeSettings exchangePlan="ExchangePlan.МТСД" exchangeOnChangeData="true" exchangePeriod="300" transactionCount="1000"/>
+</scc:StandaloneContent>

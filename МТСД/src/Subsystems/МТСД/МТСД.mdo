@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8976918f-fc70-41f7-99c2-f3d6e21ecc7c">
+  <name>МТСД</name>
+  <synonym>
+    <key>ru</key>
+    <value>МТСД</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.МТСД_СканерШтрихкодовКлиент</content>
+  <content>Catalog.МТСД_ХранимыеФайлы</content>
+  <content>CommonModule.МТСД_ФотоВидеоКлиент</content>
+  <content>ExchangePlan.МТСД</content>
+  <content>InformationRegister.МТСД_ДанныеОбъектов</content>
+</mdclass:Subsystem>

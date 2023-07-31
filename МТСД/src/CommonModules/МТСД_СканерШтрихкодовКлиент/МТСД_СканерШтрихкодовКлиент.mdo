@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a5be6fe8-4971-41f9-8335-964db1d2fafb">
+  <name>МТСД_СканерШтрихкодовКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>МТСД сканер штрихкодов клиент</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+</mdclass:CommonModule>

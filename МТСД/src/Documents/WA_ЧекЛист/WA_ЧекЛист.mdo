@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="331e2096-31a5-4d6c-9962-48f89b69f724">
+  <producedTypes>
+    <objectType typeId="0ac81a2e-c266-4151-a4e1-d2b7fa233e2a" valueTypeId="e4e05b91-b7ab-4aeb-b61c-7af91fa9d9f2"/>
+    <refType typeId="cd764b61-2334-4081-9abd-85cb90723e21" valueTypeId="0ada0d96-1084-4380-bfb8-088029778c47"/>
+    <selectionType typeId="eb6e9339-a0de-4927-9d3e-643e39c3d9b0" valueTypeId="6f9694fe-623f-4e54-a197-d6e11683797d"/>
+    <listType typeId="25cd7626-ace2-4951-a430-95fc52ff8b60" valueTypeId="38f69e70-7055-42b1-bce2-cc24e9a331ba"/>
+    <managerType typeId="1e8918ab-e0b7-433d-9b16-486ccf5f1898" valueTypeId="d8b45d0d-ac88-408c-8a3a-bf9012babf11"/>
+  </producedTypes>
+  <name>WA_ЧекЛист</name>
+  <synonym>
+    <key>ru</key>
+    <value>(WА) Чек-лист</value>
+  </synonym>
+  <comment>ТП.U08.02-5 Формирование чек-листа по приемке товаров в магазине</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.WA_ЧекЛист.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockFields>Document.WA_ЧекЛист.Attribute.ШаблонЧекЛиста</dataLockFields>
+  <dataLockFields>Document.WA_ЧекЛист.Attribute.ОбъектПроверки</dataLockFields>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="37cef995-5f4a-4e4e-a164-aec52bef1990">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.WA_СтатусыЧекЛистов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.WA_СтатусыЧекЛистов.EnumValue.КИсполнению</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="446f43fa-6ece-409e-a880-1a079af9d8c3">
+    <name>ОбъектПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект проверки</value>
+    </synonym>
+    <type>
+      <types>DocumentRef</types>
+      <types>CatalogRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9110735b-f36e-4c1e-8d8a-68f2e797dca3">
+    <name>ЗначениеСтрокиОбъектаПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение строки объекта проверки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <types>DocumentRef</types>
+      <types>CatalogRef</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="13c5fff3-a30a-4f71-9b6a-2fbed7cf52c9">
+    <name>ИдентификаторСтрокиОбъектаПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор строки объекта проверки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <field>Document.WA_ЧекЛист.StandardAttribute.Number</field>
+    </linkByType>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0fc4bd03-83c9-4783-9ec3-b032ec09620d">
+    <name>ШаблонЧекЛиста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон чек листа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.WA_ШаблоныЧекЛиста</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e7b2a9fd-8c2b-4209-a82d-f39f5ad0830f">
+    <name>АлгоритмОбработкиПройденногоЧекЛистаВыполнен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Алгоритм обработки пройденного чек листа выполнен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5a11403f-da47-4dd3-ad6e-b17255faa4a8">
+    <name>ДатаПрохождения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата прохождения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="571f3257-a966-4d17-b116-123e2337728a">
+    <name>Аннулирован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аннулирован</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="c98e16d0-7bd5-4a9c-b0be-ee83fab2f680">
+    <name>ФормаСпискаАвтономныйСервер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка автономный сервер</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2dc77e94-1391-4232-84ae-221cd7b5a1aa">
+    <name>ФормаДокументаАвтономныйСервер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа автономный сервер</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="9cc3c559-0509-409c-a57d-980c917ec24e">
+    <producedTypes>
+      <objectType typeId="99474dd8-76c3-4231-be47-37166dd60fc1" valueTypeId="99071537-16ee-4fc3-a198-88ad83cba9d1"/>
+      <rowType typeId="23f238c2-36fc-4bbd-8792-ceb3c3ef4f0e" valueTypeId="bf1f4e2d-93af-4632-b1d9-81b0d79b9bc5"/>
+    </producedTypes>
+    <name>РезультатыПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результаты проверки</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="d5eedbbe-e9ba-4d54-aa0b-a340fdf837d8">
+      <name>ПунктЧекЛиста</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пункт чек листа</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.WA_ПунктыЧекЛиста</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="62e82fa6-6a7b-43f0-ba1f-4e2f010b72ac">
+      <name>ДатаПрохождения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата прохождения</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ee041e91-f0f0-4147-8cf5-330c26943e10">
+      <name>ТекстВопроса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текст вопроса</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="40b23afc-3edc-43d0-8804-77869bcd09da">
+      <name>Пройден</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пройден</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8bde308b-9f82-477f-b205-46e8e9280326">
+      <name>НеПройден</name>
+      <synonym>
+        <key>ru</key>
+        <value>Не пройден</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4f622243-6447-4787-9a41-9b3b0d563947">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <type>
+        <types>Characteristic.WA_ПунктыЧекЛиста</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="fe14a27d-81b7-4de1-8912-f11fb69e004b">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="b510e014-9db8-48bd-89be-ba650e5a16c9">
+    <producedTypes>
+      <objectType typeId="64389bbd-416b-40b1-8d67-2eadcedbe082" valueTypeId="4da62e46-da12-4172-99af-525c7bf33a69"/>
+      <rowType typeId="1f262c57-d639-4472-b456-8773a9521fa4" valueTypeId="9d520602-3c55-4c21-842d-7d27325426d0"/>
+    </producedTypes>
+    <name>Файлы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файлы</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="9c66f541-a9f7-4270-b565-d0c1dc3f024e">
+      <name>ПунктЧекЛиста</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пункт чек листа</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.WA_ПунктыЧекЛиста</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="cf506ca1-3947-4e3b-b0e3-88f7d22326ca">
+      <name>Файл</name>
+      <synonym>
+        <key>ru</key>
+        <value>Файл</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.WA_ЧекЛистПрисоединенныеФайлы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.ВладелецФайла</name>
+        <field>Document.WA_ЧекЛист.StandardAttribute.Ref</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="34bcc813-d8a7-491f-adf8-125c97a270fd">
+    <producedTypes>
+      <objectType typeId="ae394c2f-0912-47c5-8446-bef08b539912" valueTypeId="8fe48343-f580-44e9-a980-ae4ad99752d3"/>
+      <rowType typeId="e2a79773-4678-4b24-9619-80f96bcd1305" valueTypeId="b77c4205-dc84-41a2-b661-3956bc68fa63"/>
+    </producedTypes>
+    <name>ФайлыМТСД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файлы МТСД</value>
+    </synonym>
+    <attributes uuid="a4e29a30-4ce1-419d-9f3c-b4fc2f4ae249">
+      <name>ПунктЧекЛиста</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пункт чек листа</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.WA_ПунктыЧекЛиста</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5df69e2b-7efb-4c4e-9f7e-f654aadae6b2">
+      <name>Файл</name>
+      <synonym>
+        <key>ru</key>
+        <value>Файл</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.МТСД_ХранимыеФайлы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.ВладелецФайла</name>
+        <field>Document.WA_ЧекЛист.StandardAttribute.Ref</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

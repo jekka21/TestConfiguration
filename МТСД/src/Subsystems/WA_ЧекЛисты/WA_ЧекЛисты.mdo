@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96146dbb-4718-44f4-a72b-d0df7240ea7d">
+  <name>WA_ЧекЛисты</name>
+  <synonym>
+    <key>ru</key>
+    <value>(WA) Чек-листы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.WA_ЧекЛист</content>
+</mdclass:Subsystem>

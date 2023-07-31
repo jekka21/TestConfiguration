@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea724c3b-0d28-45a6-9531-dc1616b78b49">
+  <producedTypes>
+    <selectionType typeId="8549a857-0b83-4a3e-9ace-25f79579c5cd" valueTypeId="06ff8aa7-6c69-4ad6-9193-a8d57b145a55"/>
+    <listType typeId="27d39753-c595-4f4b-b0f3-9eb4f8ff6c0d" valueTypeId="ac733bef-15e2-4c50-9049-69e5c49bacce"/>
+    <managerType typeId="0407f8f6-80c4-4802-9127-a7c32f6f842f" valueTypeId="8a5b4a55-6d38-48d0-a93b-cd31b6631cf3"/>
+    <recordSetType typeId="05c91788-27b4-469a-8b1d-84ff184cfbc5" valueTypeId="74449172-b74a-487d-ab3c-df014b6f6ac0"/>
+    <recordKeyType typeId="12ebd07e-fc00-449b-a3b9-f69a800c00f5" valueTypeId="c88900df-a64c-477d-af1b-19d367c1ba51"/>
+    <recordType typeId="482604cc-fd0c-47f4-b8a2-1c9deca0d5be" valueTypeId="bd2803a0-f3d0-449d-b226-8aca08aef0b8"/>
+    <recordManagerType typeId="b59b91e6-1f1f-419c-8abe-dede1825fd14" valueTypeId="03de4bb9-2bad-43eb-a865-0d8d8cf17000"/>
+  </producedTypes>
+  <name>МТСД_ОбъектыДляПостобработкиПослеПолученияДанныхОтМТСД</name>
+  <synonym>
+    <key>ru</key>
+    <value>МТСД объекты для постобработки после получения данных от МТСД</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="db34ddc1-1a9d-4527-8a83-c5b5141af077">
+    <name>ДатаПолученияОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата получения объекта</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9de5b624-2a89-4b75-9404-41852c28886c">
+    <name>ЕстьОшибкаПостОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Есть ошибка пост обработки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0fb9b7b1-a7f5-4906-88d6-13f6025c73b7">
+    <name>ВыполнятьПовторнуюОбработкуПослеОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнять повторную обработку после ошибки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0c787ab3-25e9-4dcf-a798-33beea215bcf">
+    <name>ТекстОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст ошибки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="5c47c8d6-f3e1-4b65-83ec-48b1369d0390">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DefinedType.МТСД_СсылочныеТипыДоступныеВАвтономномРежиме</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="db0abea4-6ebc-448d-8b5b-8c9518eff57b">
+    <name>УзелМТСД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел МТСД</value>
+    </synonym>
+    <type>
+      <types>ExchangePlanRef.МТСД</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

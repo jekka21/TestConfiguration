@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1be9f40e-1c21-4d54-9aec-72b9a5b00f1f">
+  <name>МТСД_ВыполнитьПостОбработкуПослеПолученияДанныхОтМТСД</name>
+  <synonym>
+    <key>ru</key>
+    <value>(МТСД) Выполнить пост обработку после получения данных от МТСД</value>
+  </synonym>
+  <methodName>CommonModule.МТСД_ОбменДаннымиОсновнойСервер.ВыполнитьПостОбработкуПослеПолученияДанныхОтМТСД</methodName>
+  <description>(МТСД) Выполнить пост обработку после получения данных от МТСД</description>
+  <key>МТСД_ВыполнитьПостОбработкуПослеПолученияДанныхОтМТСД</key>
+  <use>true</use>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

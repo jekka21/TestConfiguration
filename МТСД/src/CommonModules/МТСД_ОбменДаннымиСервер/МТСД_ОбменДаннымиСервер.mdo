@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9707a3d5-dfa7-49aa-9371-acc3c9c9fd01">
+  <name>МТСД_ОбменДаннымиСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>МТСД обмен данными сервер</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

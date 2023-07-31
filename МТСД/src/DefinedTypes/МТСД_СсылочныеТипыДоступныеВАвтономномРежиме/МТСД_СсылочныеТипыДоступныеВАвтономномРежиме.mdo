@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="add6f63e-b008-44cb-877f-1f0e11b866a9">
+  <producedTypes>
+    <containerType typeId="6f05d8ee-aefa-4e3a-8588-9dd341686311" valueTypeId="9f44f15d-e2f2-43ae-be82-1a70f5be5de2"/>
+  </producedTypes>
+  <name>МТСД_СсылочныеТипыДоступныеВАвтономномРежиме</name>
+  <synonym>
+    <key>ru</key>
+    <value>МТСД ссылочные типы доступные в автономном режиме</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Номенклатура</types>
+    <types>CatalogRef.Склады</types>
+    <types>DocumentRef.WA_ЧекЛист</types>
+  </type>
+</mdclass:DefinedType>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExchangePlan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b164b66d-1160-4aac-9ee0-cf12c7ab41d7" thisNode="0f6fd2e7-56e6-47ce-bdf0-5a844b6d265e">
+  <producedTypes>
+    <objectType typeId="80ac5561-7d9f-4bac-8e6d-d76baec01280" valueTypeId="099c5c5f-a910-45a3-96d1-9132e8d288df"/>
+    <refType typeId="ae8a51bb-64f9-430f-b920-19de00867be2" valueTypeId="ab610239-cefb-4ae6-bd62-6b707a2d84fd"/>
+    <selectionType typeId="0b8f0a26-5721-49f7-97a7-29836d180f7f" valueTypeId="d4b84f71-f8d3-4e44-ba66-7acb1f8b833b"/>
+    <listType typeId="0eface72-ced6-4d86-8cef-0ad4d636c19c" valueTypeId="1a0734a3-81e1-4e61-9291-584189f6a638"/>
+    <managerType typeId="c2c25540-fbc7-483a-a86c-0c3b56d633e2" valueTypeId="2b8c2aac-b3d6-4c20-bbdc-9e95e598094e"/>
+  </producedTypes>
+  <name>МТСД</name>
+  <synonym>
+    <key>ru</key>
+    <value>МТСД</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ExchangePlan.МТСД.StandardAttribute.Description</inputByString>
+  <inputByString>ExchangePlan.МТСД.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>25</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <content>
+    <mdObject>Document.WA_ЧекЛист</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.МТСД_ХранимыеФайлы</mdObject>
+  </content>
+  <content>
+    <mdObject>Catalog.Склады</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Catalog.Номенклатура</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ExchangePlan.МТСД.Form.ФормаУзла</defaultObjectForm>
+  <attributes uuid="50abde9d-9b98-436c-b83d-8c3f1e8a7bdd">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="d4ad3735-e0db-4c51-8915-86ae20e58e13">
+    <name>ФормаУзла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма узла</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExchangePlan>

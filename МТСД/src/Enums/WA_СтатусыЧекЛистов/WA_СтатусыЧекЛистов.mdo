@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab3034ca-6680-4a5b-b825-8646267a19ac">
+  <producedTypes>
+    <refType typeId="dcd26407-fd99-4249-90ed-2491bf329450" valueTypeId="da40ad1a-676a-4059-89d1-4deff2f78c55"/>
+    <listType typeId="cff4102c-af59-498b-bf67-409ed2cc3840" valueTypeId="f256b755-717b-4560-9acd-b5c99210778b"/>
+    <managerType typeId="72848151-e54b-4edc-812e-1192d0e0b921" valueTypeId="a7746bf8-bf14-4064-be8b-241d27f62bb2"/>
+  </producedTypes>
+  <name>WA_СтатусыЧекЛистов</name>
+  <synonym>
+    <key>ru</key>
+    <value>(WA) Cтатусы чек листов</value>
+  </synonym>
+  <comment>ТП.U08.02-5 Формирование чек-листа по приемке товаров в магазине</comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="94e40906-b0ab-4895-abc3-d1f32bae8bd2">
+    <name>КИсполнению</name>
+    <synonym>
+      <key>ru</key>
+      <value>К исполнению</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1eaf066a-3242-419f-a61a-8917f703914d">
+    <name>Пройден</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пройден</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fd98f0e3-cfcf-4b10-bb43-9c1b92b2237b">
+    <name>ПройденСЗамечаниями</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пройден с замечаниями</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d68fcc0e-7e58-4c31-9984-468cefbeb615">
+    <name>НеПройден</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не пройден</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4b755a14-4a6c-4a12-be1a-c530ebadb2a7">
+  <name>МТСД_ФотоВидеоКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>МТСД фото видео клиент</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+</mdclass:CommonModule>

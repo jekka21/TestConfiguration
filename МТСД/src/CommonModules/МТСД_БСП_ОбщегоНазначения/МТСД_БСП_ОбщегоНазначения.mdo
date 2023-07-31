@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4685bceb-3c73-4957-a678-25e75968c7b8">
+  <name>МТСД_БСП_ОбщегоНазначения</name>
+  <synonym>
+    <key>ru</key>
+    <value>МТСД БСП общего назначения</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

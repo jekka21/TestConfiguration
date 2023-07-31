@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca433724-9371-4588-8ce5-66cd87fd1ed4">
+  <name>МТСД_ОбменДанными_СправочникОбъектПередЗаписью</name>
+  <synonym>
+    <key>ru</key>
+    <value>МТСД обмен данными справочник объект перед записью</value>
+  </synonym>
+  <source>
+    <types>CatalogObject</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.МТСД_ОбменДаннымиОсновнойСервер.СправочникОбъектПередЗаписью</handler>
+</mdclass:EventSubscription>

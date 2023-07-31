@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f4ea43f4-001b-4aad-827c-2523b848dc74">
+  <producedTypes>
+    <selectionType typeId="cd8b4d81-a8dc-4e34-9764-7bac1c27a0c0" valueTypeId="88c6508c-9e95-476e-9860-77ae10c71f6e"/>
+    <listType typeId="52695a8b-2e07-4d86-bf0f-b36040fc0caf" valueTypeId="cac5719b-df43-48d5-a4ff-945f9d06f7e6"/>
+    <managerType typeId="2abd3a74-5d77-4bb9-b307-6eb27eb49762" valueTypeId="92c9d601-089a-4b9f-ba87-b11f20a9c8a7"/>
+    <recordSetType typeId="ccb8fd8b-1040-4b3f-8c1a-3089868c8239" valueTypeId="22263328-f574-4b9b-9e02-3f7d748dfe7a"/>
+    <recordKeyType typeId="e77febf5-e642-4698-92af-62340c859aad" valueTypeId="1177b712-b556-4986-b1ea-d0c347f45575"/>
+    <recordType typeId="588e8802-3d64-49c8-9837-39232e16c6b3" valueTypeId="c25718a8-e47c-414b-a0d3-379dbdfb59ab"/>
+    <recordManagerType typeId="f8f8007d-2a1d-47fe-8cc2-c54edd9d6995" valueTypeId="8dd3e261-fec0-49fb-b366-35b200d92395"/>
+  </producedTypes>
+  <name>МТСД_ДанныеОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>МТСД Данные объектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="857ddd64-b4fc-4d4d-958a-e73bf7625c31">
+    <name>Данные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f1066433-70d3-4d23-ac1a-a26495b1e273">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DefinedType.МТСД_СсылочныеТипыДоступныеВАвтономномРежиме</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="63f50525-89d3-4bae-b8e3-c56db7faae28">
+    <name>ИмяДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя данных</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="33131331-a7c9-4b80-8779-079462b89dd4">
+  <name>МТСД_Тест</name>
+  <synonym>
+    <key>ru</key>
+    <value>МТСД тест</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.МТСД_Тест</content>
+  <content>Catalog.Склады</content>
+  <content>Catalog.Номенклатура</content>
+</mdclass:Subsystem>
